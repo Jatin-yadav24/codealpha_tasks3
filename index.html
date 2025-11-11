@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jatin Yadav — Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="brand">
+        <div class="logo">JY</div>
+        <div>
+          <strong>Jatin Yadav</strong><br>
+          <small style="color:var(--muted)">Front-End Developer</small>
+        </div>
+      </div>
+      <div class="navlinks">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Hello, I'm Jatin 👋</h1>
+      <p>I'm a passionate Web Developer from Indore, India. I love transforming ideas into responsive, interactive, and elegant websites.</p>
+      <a href="#projects" class="btn">View Projects</a>
+    </div>
+  </section>
+
+  <section id="about" class="reveal">
+    <h2>About Me</h2>
+    <p style="color:var(--muted);margin-bottom:15px">
+      Hello! I'm <strong>Jatin Yadav</strong>, a web developer with a strong foundation in front-end technologies.
+      I enjoy creating smooth, user-friendly interfaces and continuously learning new trends in web development.
+    </p>
+  </section>
+
+  <section id="skills" class="reveal">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="skill">HTML5</div>
+      <div class="skill">CSS3 (Flexbox, Grid)</div>
+      <div class="skill">JavaScript (ES6+)</div>
+      <div class="skill">Bootstrap</div>
+      <div class="skill">Responsive Design</div>
+      <div class="skill">Git & GitHub</div>
+      <div class="skill">VS Code</div>
+      <div class="skill">Chrome DevTools</div>
+      <div class="skill">UI/UX Awareness</div>
+    </div>
+  </section>
+
+  <section id="projects" class="reveal">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="card">
+        <h3>Modern Calculator</h3>
+        <p>A stylish, fully responsive calculator with backspace and keyboard support.</p>
+        <div>
+          <a href="#" class="btn">Live Demo</a>
+          <a href="#" class="btn" style="background:transparent;border:1px solid var(--accent);color:var(--accent);">GitHub</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Image Gallery</h3>
+        <p>Gallery with category filter, smooth transitions, and lightbox view.</p>
+        <div>
+          <a href="#" class="btn">View Project</a>
+          <a href="#" class="btn" style="background:transparent;border:1px solid var(--accent);color:var(--accent);">GitHub</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Online Book Store</h3>
+        <p>Frontend book library to browse and read Indian literature online.</p>
+        <div>
+          <a href="#" class="btn">Explore</a>
+          <a href="#" class="btn" style="background:transparent;border:1px solid var(--accent);color:var(--accent);">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="resume" class="reveal">
+    <h2>Resume</h2>
+    <div class="card" style="max-width:600px;margin:auto;text-align:center">
+      <p class="muted">You can view or download my resume below:</p>
+      <div style="margin-top:15px;display:flex;justify-content:center;gap:15px;flex-wrap:wrap;">
+        <a href="Jatin_Yadav.pdf" class="btn" target="_blank">View Resume</a>
+        <a href="Jatin_Yadav.pdf" download class="btn" style="background:transparent;border:1px solid var(--accent);color:var(--accent);">Download PDF</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="reveal">
+    <h2>Contact Me</h2>
+    <form class="contact" onsubmit="sendMail(event)">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+      <label for="email">Your Email</label>
+      <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+      <label for="message">Your Message</label>
+      <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    © <span id="year"></span> Jatin Yadav — All rights reserved.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
